@@ -17,6 +17,11 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildDossier } from './vendor/makefun-game.ts';
 
+// Coral Bay Heat: an original open-world crime game (see game/), handed in
+// by this program exactly as the starter's plumbing prescribes.
+const ENTRY_TITLE = 'Coral Bay Heat';
+console.log(`handing in: ${ENTRY_TITLE}`);
+
 const here = fileURLToPath(new URL('.', import.meta.url));
 const out = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
